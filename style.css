@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.content-bar h1{
+    margin-right: 70%;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    user-select: none;
+    z-index: 1;
+}
+.navbar nav{
+    display: flex;
+    border-radius: 100px;
+    margin-top: 20px;
+    width: 350px;
+    height: 40px;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+}
+.navbar nav:hover{
+    height: 45px;
+    transition: 0.5s;
+}
+.navbar nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    align-items: center;
+}
+.navbar nav ul:hover{
+    cursor: pointer;
+}
+.navbar nav ul li{
+    display: inline-flex;
+    color: white;
+    padding: 15px;
+}
+.content-bar{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.content-bar input:hover{
+    width: 250px;
+    height: 30px;
+    transition: 0s;
+    border: 5px solid rgb(195,185,185);
+}
+.h2:hover{
+    border: 2px solid white;
+    transition: 0.1s;
+    cursor: pointer;
+
+}
+.content-bar .h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 30px;
+}
+.content-bar input{
+    display: flex;
+    color: grey;
+    padding: 8px 15px;
+    width: 200PX;
+    align-items: center;
+    height: 25px;
+    border-color:none ;
+    margin-right: 10%;
+    border: none;
+    text-align: center;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search:hover{
+    cursor: pointer;
+}
+.search-box:hover{
+    cursor: pointer;
+}
+.search-bar:focus{
+        border: none;
+        outline: none;
+    }
+    @media screen and (max-width : 693px) {
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .content-bar{
+            width: 600px;
+            height: 30px;
+            h1{
+                margin-left: 20px;
+                font-size: medium;
+            }
+            input{
+                margin-right: 5%;
+                height: 10px;
+                width: 20px;
+            }
+            h3{
+                margin-right: 290%;
+            }
+        }
+        .navbar{
+            margin-left: 20px;
+            display: flex;
+            position: sticky;
+            bottom: 5px;
+        }
+        .content-bar input:hover{
+            width: 20px;
+            height: 10px;
+            border: 0;
+        }
+    }
+.product-1:hover,.product-2,.product-3,.product-4,.product-5,.product-6,.product-7,.product-8,.product-9,.product-10,.product-11,.product-12,.product-13,.product-14,.product-15{
+    cursor: pointer;
+}
+
+#username,#email,#password{
+    padding: 5px;
+    margin-left: 20%;
+    border-radius: 0px;
+    border: none;
+    padding-left: 2%;
+}
+#username{
+    margin-top: 50px;
+}
+#button5321{
+    border: 1px solid white;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25%;
+    position: fixed;
+    bottom: 10%;
+    left: 51%;
+    text-align: center;  
+}

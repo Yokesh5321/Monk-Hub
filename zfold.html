@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monk Hub</title>
+    <link rel="icon" type="image/x-icon" href="https://png.pngtree.com/png-clipart/20221001/original/pngtree-online-shopping-logo-with-cart-icon-png-image_8647239.png">
+</head>
+<body>
+
+<style>
+    body{
+        padding: 0;
+        margin: 0;
+    }
+</style>
+    
+    <div class="menu" id="menu">
+        <button onclick="back()">く</button>
+    <ul>
+        <li><a href="">Product Category</a></li>
+        <li><a href="">🛒 Shopping cart</a></li>
+        <li><a href="tel:+918248552028">🔧 Customer Service</a></li>
+        <li><a href="https://maps.app.goo.gl/7dh4H9GKimGPdMxX7">𖡡 Store Location</a></li>
+        <li onclick="monk()"><a>👤 Account/Login</a></li>
+    </ul>
+    
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .menu button{
+        background-color: black;
+        color: white;
+        border: none;
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: fixed;
+        top: 10px;
+        left: 20px;
+    }
+    
+.menu ul li:hover{
+    background-color: rgba(255, 255, 255, 0.123);
+}
+    .menu{
+       background-color: rgba(0, 0, 0, 0.882);
+       position: fixed;
+       display: none;
+       flex-direction: column;
+       justify-content: flex-start;
+       align-items: flex-end;
+       width: 250px;
+       height: 100vh;
+       user-select: none;
+    }
+    .menu ul{
+        margin-top: 10px;
+        list-style: none;
+        padding: 0 40px;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        .menu a:hover{
+            cursor: pointer;
+        }
+    }
+    .menu li a{
+        text-decoration: none;
+        color: white;
+    }
+    .menu li{
+        padding: 10px;
+    }
+
+</style>
+</div>
+
+<div id="center">
+
+<div id="Login">
+    <h1 style="text-align: center;">Login</h1>
+</div>
+<div>
+    <button onclick="bagin()" id="bagi">く</button>
+
+</div>
+<form id="details">
+    <div id="user">
+        👤<input required type="text" placeholder="username">
+    </div>
+    <div id="email">
+        ✉️<input required type="email" placeholder="email">
+    </div>
+    <div id="pass">
+        🔑<input required type="password" placeholder="password">
+    </div>
+    <div id="signin">
+    <button>Sign in</button>
+</div>
+</form>
+
+<style>
+    #bagi{
+        position: fixed;
+        top:0px;
+        right: 0%;
+        background-color: inherit;
+        width: 50px;
+        border: none;
+        margin-top: 20px;
+    }
+    #Login{
+        padding: 0;
+        margin: 0;
+        background-color: white;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 10%;
+    }
+    #user,#email,#pass{
+        display: flex;
+        justify-content: center;
+        padding: 2px;
+        margin-top: 2px;
+        border-radius: none;
+
+    }
+    #email{
+        margin-right: 330px;
+    }
+    #user{
+        margin-top: 1%;
+    }
+    #signin{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    #signin button{
+       background-color: rgb(55, 55, 101);
+       width: 200px;
+       height: 25px;
+       color: white;
+       border: none;
+       border-radius: 2px;
+       margin-left: 1%;
+    }
+        #user input,#email input,#pass input{
+            width: 200px;
+            height: 25px;
+        }
+#center{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 4;
+    background-color: white;
+}
+</style>
+</div>
+
+   <div class="navbar">
+        <nav style="background-color: black;">
+             <ul style="display: inline;">
+                <li class="home"><a href="index.html" style="text-decoration: none;color: inherit;">🏠︎ HOME</a></li>
+                <li><a href="tel:+918248552028" style="text-decoration: none; color: inherit;">☎︎  CONTACT US</a></li>
+                <li><a href="mailto:yokeshkumar5321@gmail.com" style="text-decoration: none;color: inherit;">➢  MAIL</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <div>
+        <nav class="content-bar">
+            <div class="h2">
+            <h2 onclick="button()">⋮</h2></div>
+            <h1>Monk Hub</h1>
+            <div class="search">
+            <input class="search-box" placeholder="search" type="text" style="width: 100px;border-radius: 20px;">
+            <h3>🔍︎</h3>
+            </div>
+        </nav>
+
+    </div> 
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+}
+.content-bar h1{
+    margin-right: 70%;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    user-select: none;
+    z-index: 1;
+}
+.navbar nav{
+    display: flex;
+    border-radius: 100px;
+    margin-top: 20px;
+    width: 350px;
+    height: 40px;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+}
+.navbar nav:hover{
+    height: 45px;
+    transition: 0.5s;
+}
+.navbar nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    align-items: center;
+}
+.navbar nav ul:hover{
+    cursor: pointer;
+}
+.navbar nav ul li{
+    display: inline-flex;
+    color: white;
+    padding: 15px;
+}
+.content-bar{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.content-bar input:hover{
+    width: 250px;
+    height: 30px;
+    transition: 0s;
+    border: 5px solid rgb(195,185,185);
+}
+.h2:hover{
+    border: 2px solid white;
+    transition: 0.1s;
+    cursor: pointer;
+
+}
+.content-bar .h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 30px;
+}
+.content-bar input{
+    display: flex;
+    color: grey;
+    padding: 8px 15px;
+    width: 200PX;
+    align-items: center;
+    height: 25px;
+    border-color:none ;
+    margin-right: 10%;
+    border: none;
+    text-align: center;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search:hover{
+    cursor: pointer;
+}
+.search-box:hover{
+    cursor: pointer;
+}
+.search-bar:focus{
+        border: none;
+        outline: none;
+    }
+    #username,#email,#password{
+    padding: 5px;
+    margin-left: 20%;
+    border-radius: 0px;
+    border: none;
+    padding-left: 2%;
+}
+#username{
+    margin-top: 50px;
+}
+#button5321{
+    border: 1px solid white;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25%;
+    position: fixed;
+    bottom: 10%;
+    left: 51%;
+    text-align: center;  
+}
+
+ @media screen and (max-width : 693px) {
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .content-bar{
+            width: 600px;
+            height: 30px;
+            h1{
+                margin-left: 20px;
+                font-size: medium;
+            }
+            input{
+                margin-right: 5%;
+                height: 10px;
+                width: 20px;
+            }
+            h3{
+                margin-right: 290%;
+            }
+        }
+        .navbar{
+            margin-left: 20px;
+            display: flex;
+            position: sticky;
+            bottom: 5px;
+        }
+        .content-bar input:hover{
+            width: 20px;
+            height: 10px;
+            border: 0;
+        }
+    }
+    </style>
+
+
+<script>
+    var menu1=document.querySelector(".h2")
+var menu=document.querySelector(".menu")
+function button(){
+    menu.style.display="flex"
+}
+function back(){
+    menu.style.display="none"
+}
+var login=document.getElementById("center")
+var bagi=document.getElementById("bagi")
+function monk(){
+    login.style.display="block"
+}
+function bagin(){
+    login.style.display="none"
+}
+</script>
+<style>
+    @media screen and (max-width : 693px) {
+    #email{
+        margin-left: 220px;
+        width: 255px;
+    }
+    #center{
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+}
+
+</style>
+ <main>
+        <div class="shop-container">
+            
+            <div class="image-gallery-pane">
+                <img src="https://cdn.mos.cms.futurecdn.net/Xf3WE8Qn7hGfziJpahS38c.jpg" alt="Samsung Galaxy Z Fold 6">
+            </div>
+
+            <div class="product-details-pane">
+                <div class="product-header">
+                    <h2>galaxy-z-fold-6</h2>
+                    <div class="rating-tag">★ 4.7 (86 reviews) | In Stock</div>
+                    <div class="price-tag">$1,899.00</div>
+                </div>
+
+                <div class="product-configurator">
+                    <div class="option-group">
+                        <div class="option-label">Colour Finish :</div>
+                        <div class="color-selector">
+                            <div class="color-option navy active" title="Navy"></div>
+                            <div class="color-option silver-shadow" title="Silver Shadow"></div>
+                            <div class="color-option pink" title="Pink"></div>
+                        </div>
+                    </div>
+
+                    <div class="option-group">
+                        <div class="option-label">Storage Capacity :</div>
+                        <div class="storage-selector">
+                            <button class="storage-btn active">256GB</button>
+                            <button class="storage-btn">512GB</button>
+                            <button class="storage-btn">1TB</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-container">
+                    <button class="btn-add-cart">Add to Cart</button>
+                    <button class="btn-buy-now">Buy It Now</button>
+                </div>
+            </div>
+        </div>
+
+        <table class="product-specs-summary">
+            <thead>
+                <tr>
+                    <th colspan="2">Key Product Overview Highlights</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="spec-title">Main Display (Unfolded)</td>
+                    <td>7.6-inch Dynamic AMOLED 2X, QXGA+, 120Hz Adaptive Refresh Rate</td>
+                </tr>
+                <tr>
+                    <td class="spec-title">Cover Display (Folded)</td>
+                    <td>6.3-inch Dynamic AMOLED 2X, HD+, Gorilla Glass Victus 2 structural protection</td>
+                </tr>
+                <tr>
+                    <td class="spec-title">Camera Architecture</td>
+                    <td>Rear System: 50MP Wide Main + 12MP Ultra-Wide + 10MP Telephoto (3x Optical Zoom) | Under-Display Cover Lens array</td>
+                </tr>
+                <tr>
+                    <td class="spec-title">Processor & Platform</td>
+                    <td>Snapdragon 8 Gen 3 for Galaxy | 12GB high-speed multitasking RAM operational ecosystem</td>
+                </tr>
+                <tr>
+                    <td class="spec-title">Chassis Durability</td>
+                    <td>Enhanced Armor Aluminum hinge construct framework, IP48 water resistance rating</td>
+                </tr>
+                <tr>
+                    <td class="spec-title">Box Contents</td>
+                    <td>Samsung Galaxy Z Fold 6, USB-C to USB-C connection wire cable, SIM Tray Pin tool</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <style>
+          main {
+            flex: 1;
+            max-width: 1200px;
+            width: 100%;
+            margin: 30px auto;
+            padding: 0 20px;
+            margin-bottom: 100px;
+        }
+
+        /* Two Column Grid: Product Showcase & Purchase Interface */
+        .shop-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            border: 2px solid #000000;
+            background: #ffffff;
+        }
+
+        /* Left Column: Product Imagery Panel */
+        .image-gallery-pane {
+            border-right: 2px solid #000000;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .image-gallery-pane img {
+            max-width: 100%;
+            height: auto;
+            max-height: 450px;
+            object-fit: contain;
+        }
+
+        /* Right Column: Checkout Configurator Panel */
+        .product-details-pane {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-header h2 {
+            font-size: 32px;
+            font-weight: bold;
+            text-transform: capitalize;
+            margin-bottom: 5px;
+        }
+
+        .rating-tag {
+            font-size: 14px;
+            color: #555555;
+            margin-bottom: 15px;
+        }
+
+        .price-tag {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Configuration Variant Options Block */
+        .option-group {
+            margin-bottom: 25px;
+        }
+
+        .option-label {
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+
+        /* Color Circle Selector Controls */
+        .color-selector {
+            display: flex;
+            gap: 12px;
+        }
+
+        .color-option {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            border: 1px solid #000000;
+            cursor: pointer;
+            transition: transform 0.2s;
+            position: relative;
+        }
+
+        .color-option.active::after {
+            content: '';
+            position: absolute;
+            top: -4px;
+            left: -4px;
+            right: -4px;
+            bottom: -4px;
+            border: 1px solid #000000;
+            border-radius: 50%;
+        }
+
+        .color-option:hover { transform: scale(1.1); }
+        .navy { background-color: #2b3a4a; }
+        .silver-shadow { background-color: #b8bcbe; }
+        .pink { background-color: #ebd1d5; }
+
+        /* Storage Brick Selector Elements */
+        .storage-selector {
+            display: flex;
+            gap: 10px;
+        }
+
+        .storage-btn {
+            border: 1px solid #000000;
+            background: #ffffff;
+            color: #000000;
+            padding: 8px 16px;
+            font-size: 14px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .storage-btn.active {
+            background: #000000;
+            color: #ffffff;
+        }
+
+        /* Core Transaction Actions Layout Group */
+        .action-container {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn-add-cart {
+            width: 100%;
+            padding: 15px;
+            background-color: #ffffff;
+            color: #000000;
+            border: 2px solid #000000;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-add-cart:hover {
+            background-color: #f5f5f5;
+        }
+
+        .btn-buy-now {
+            width: 100%;
+            padding: 15px;
+            background-color: #000000;
+            color: #ffffff;
+            border: 2px solid #000000;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        .btn-buy-now:hover {
+            opacity: 0.9;
+        }
+
+        /* Structured Highlights Table Grid */
+        .product-specs-summary {
+            margin-top: 40px;
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px solid #000000;
+        }
+
+        .product-specs-summary th {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 12px;
+            text-align: left;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        .product-specs-summary td {
+            padding: 12px;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 14px;
+        }
+
+        .product-specs-summary tr:last-child td {
+            border-bottom: none;
+        }
+
+        .spec-title {
+            font-weight: bold;
+            width: 30%;
+            background-color: #fcfcfc;
+            border-right: 1px solid #e0e0e0;
+        }
+
+    </style>
+    </body>
+    </html>

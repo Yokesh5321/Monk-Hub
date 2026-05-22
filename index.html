@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monk Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="html" href="navbar.html">
+    <link rel="icon" type="image/x-icon" href="https://png.pngtree.com/png-clipart/20221001/original/pngtree-online-shopping-logo-with-cart-icon-png-image_8647239.png">
+</head>
+<body>
+    <div class="menu" id="menu">
+        <button onclick="back()">く</button>
+    <ul>
+        <li><a href="">Product Category</a></li>
+        <li><a href="">🛒 Shopping cart</a></li>
+        <li><a href="tel:+918248552028">🔧 Customer Service</a></li>
+        <li><a href="https://maps.app.goo.gl/7dh4H9GKimGPdMxX7">𖡡 Store Location</a></li>
+        <li onclick="monk()"><a>👤 Account/Login</a></li>
+    </ul>
+    
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .menu button{
+        background-color: black;
+        color: white;
+        border: none;
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: fixed;
+        top: 10px;
+        left: 20px;
+    }
+    
+.menu ul li:hover{
+    background-color: rgba(255, 255, 255, 0.123);
+}
+    .menu{
+       background-color: rgba(0, 0, 0, 0.882);
+       position: fixed;
+       display: none;
+       flex-direction: column;
+       justify-content: flex-start;
+       align-items: flex-end;
+       width: 250px;
+       height: 100vh;
+       user-select: none;
+    }
+    .menu ul{
+        margin-top: 10px;
+        list-style: none;
+        padding: 0 40px;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        .menu a:hover{
+            cursor: pointer;
+        }
+    }
+    .menu li a{
+        text-decoration: none;
+        color: white;
+    }
+    .menu li{
+        padding: 10px;
+    }
+
+</style>
+</div>
+<div id="center">
+
+<div id="Login">
+    <h1 style="text-align: center;">Login</h1>
+</div>
+<div>
+    <button onclick="bagin()" id="bagi">く</button>
+
+</div>
+<form id="details">
+    <div id="user">
+        👤<input required type="text" placeholder="username">
+    </div>
+    <div id="email">
+        ✉️<input required type="email" placeholder="email">
+    </div>
+    <div id="pass">
+        🔑<input required type="password" placeholder="password">
+    </div>
+    <div id="signin">
+    <button>Sign in</button>
+</div>
+</form>
+
+<style>
+    #bagi{
+        position: fixed;
+        top:0px;
+        right: 0%;
+        background-color: inherit;
+        width: 50px;
+        border: none;
+        margin-top: 20px;
+    }
+    #Login{
+        padding: 0;
+        margin: 0;
+        background-color: white;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 10%;
+    }
+    #user,#email,#pass{
+        display: flex;
+        justify-content: center;
+        padding: 2px;
+        margin-top: 2px;
+        border-radius: none;
+
+    }
+    #email{
+        margin-right: 20%;
+    }
+    #user{
+        margin-top: 1%;
+    }
+    #signin{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    #signin button{
+       background-color: rgb(55, 55, 101);
+       width: 200px;
+       height: 25px;
+       color: white;
+       border: none;
+       border-radius: 2px;
+       margin-left: 1%;
+    }
+        #user input,#email input,#pass input{
+            width: 200px;
+            height: 25px;
+        }
+#center{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 4;
+    background-color: white;
+}
+</style>
+</div>
+    <div class="navbar">
+        <nav style="background-color: black;">
+             <ul style="display: inline;">
+                <li class="home"><a href="index.html" style="text-decoration: none;color: inherit;">🏠︎ HOME</a></li>
+                <li><a href="tel:+918248552028" style="text-decoration: none; color: inherit;">☎︎  CONTACT US</a></li>
+                <li><a href="mailto:yokeshkumar5321@gmail.com" style="text-decoration: none;color: inherit;">➢  MAIL</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <div>
+        <nav class="content-bar">
+            <div class="h2">
+            <h2 onclick="button()">⋮</h2></div>
+            <h1>Monk Hub</h1>
+            <div class="search">
+            <input class="search-box" placeholder="search" type="text" style="width: 100px;border-radius: 20px;">
+            <h3>🔍︎</h3>
+            </div>
+        </nav>
+
+    </div>
+<a href="17promax.html" style="text-decoration: none;">
+    <div class="product-1" style="display: flex; border: 1px solid black; width: auto;height: 200px;margin-top: 50px; margin-left: 10px;margin-right: 10px;">
+        <img style="width: 30vw;border: 1px solid black;height: 200px;" src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=600">
+        <h3 style="width: 70vw;border: 1px solid black;">
+ <div>
+            <h2 style="font-size: 26px; font-weight: bold; margin-bottom: 5px; color: #000000;margin-left: 20px;">iPhone 17 Pro Max</h2>
+            <p style="font-size: 20px; font-weight: bold; margin-bottom: 15px; color: #000000;margin-left: 20px;">$1,199.00</p>
+            
+            <p style="font-size: 14px; margin-bottom: 8px; color: #000000;margin-left: 20px;">colours :</p>
+            <div style="display: flex; gap: 8px; margin-bottom: 10px;margin-left: 20px;">
+                <span style="width: 20px; height: 20px; border-radius: 50%; border: 1px solid #000000; background-color: #d97746; display: inline-block;"></span>
+                <span style="width: 20px; height: 20px; border-radius: 50%; border: 1px solid #000000; background-color: #e3e4e5; display: inline-block;"></span>
+                <span style="width: 20px; height: 20px; border-radius: 50%; border: 1px solid #000000; background-color: #2e4a62; display: inline-block;"></span>
+            </div>
+        </div>
+
+        <div style="display: flex; gap: 10px; width: 90%; box-sizing: border-box; margin-top: 15px;">
+            <a href="17promax.html" style="flex: 1; padding: 12px 0; background: #ffffff; color: #000000; border: 2px solid #000000; text-align: center; text-decoration: none; font-weight: bold; font-size: 14px; text-transform: uppercase; box-sizing: border-box; display: inline-block;">
+                View Specs
+            </a>
+            <button style="flex: 1; padding: 12px 0; background: #000000; color: #ffffff; border: 2px solid #000000; font-weight: bold; font-size: 14px; text-transform: uppercase; cursor: pointer; box-sizing: border-box;">
+                Buy Now
+            </button>
+        </div>
+
+        </h3>
+    </div></a>
+
+
+    <a href="s25.html" style="text-decoration: none;">
+    <div class="product-2" style="display: flex; border: 1px solid black; width: auto;height: 200px;margin-top: 5px;margin-left: 10px;margin-right: 10px;">
+        <img style="width: 30vw;border: 1px solid black;height: 200px;" src="https://tse2.mm.bing.net/th/id/OIP.D_QusMZlEckfcx_x9NIkXwHaEK?rs=1&pid=ImgDetMain&o=7&rm=3">
+        <h3 style="width: 70vw;border: 1px solid black;">
+            <div>
+            <h2 style="font-size: 26px; font-weight: bold; margin-bottom: 5px; color: #000000;margin-left: 20px;">Samsung Galaxy s25 Ultra</h2>
+            <p style="font-size: 20px; font-weight: bold; margin-bottom: 15px; color: #000000;margin-left: 20px;">$1,299.00</p>
+            
+            <p style="font-size: 14px; margin-bottom: 8px; color: #000000;margin-left: 20px;">colours :</p>
+            <div style="display: flex; gap: 8px; margin-bottom: 10px;margin-left: 20px;">
+                <span style="width: 20px; height: 20px; border-radius: 50%; border: 1px solid #000000; background-color: #7a7b7d; display: inline-block;"></span>
+                <span style="width: 20px; height: 20px; border-radius: 50%; border: 1px solid #000000; background-color: #212224; display: inline-block;"></span>
+                <span style="width: 20px; height: 20px; border-radius: 50%; border: 1px solid #000000; background-color: #cbccce; display: inline-block;"></span>
+            </div>
+        </div>
+
+        <div style="display: flex; gap: 10px; width: 90%; box-sizing: border-box; margin-top: 15px;">
+            <a href="s25.html" style="flex: 1; padding: 12px 0; background: #ffffff; color: #000000; border: 2px solid #000000; text-align: center; text-decoration: none; font-weight: bold; font-size: 14px; text-transform: uppercase; box-sizing: border-box; display: inline-block;">
+                View Specs
+            </a>
+            <button style="flex: 1; padding: 12px 0; background: #000000; color: #ffffff; border: 2px solid #000000; font-weight: bold; font-size: 14px; text-transform: uppercase; cursor: pointer; box-sizing: border-box;">
+                Buy Now
+            </button>
+        </div>
+        </h3>
+    </div>
+    </a>
+    <a href="17pro.html" style="text-decoration: none;">
+    <div class="product-3" style="display: flex; border: 1px solid black; width: auto;height: 200px;margin-top: 5px;margin-left: 10px;margin-right: 10px;">
+        <img style="width: 30vw;border: 1px solid black;height: 200px;" src="https://www.geeky-gadgets.com/wp-content/uploads/2025/03/iphone-17-pro-max-camera-design_optimized.jpg">
+        <h3 style="width: 70vw;border: 1px solid black;">
+ <div>
+            <h2 style="font-size: 26px; font-weight: bold; margin-bottom: 5px; color: #000000;margin-left: 20px;">iPhone 17 Pro</h2>
+            <p style="font-size: 20px; font-weight: bold; margin-bottom: 15px; color: #000000;margin-left: 20px;">$1,099.00</p>
+            
+            <p style="font-size: 14px; margin-bottom: 8px; color: #000000;margin-left: 20px;">colours :</p>
+            <div style="display: flex; gap: 8px; margin-bottom: 10px;margin-left: 20px;">
+                <span style="width: 20px; height: 20px; border-radius: 50%; border: 1px solid #000000; background-color: #d97746; display: inline-block;"></span>
+                <span style="width: 20px; height: 20px; border-radius: 50%; border: 1px solid #000000; background-color: #8e8c89; display: inline-block;"></span>
+                <span style="width: 20px; height: 20px; border-radius: 50%; border: 1px solid #000000; background-color: #232b2b; display: inline-block;"></span>
+            </div>
+        </div>
+
+        <div style="display: flex; gap: 10px; width: 90%; box-sizing: border-box; margin-top: 15px;">
+            <a href="17pro.html" style="flex: 1; padding: 12px 0; background: #ffffff; color: #000000; border: 2px solid #000000; text-align: center; text-decoration: none; font-weight: bold; font-size: 14px; text-transform: uppercase; box-sizing: border-box; display: inline-block;">
+                View Specs
+            </a>
+            <button style="flex: 1; padding: 12px 0; background: #000000; color: #ffffff; border: 2px solid #000000; font-weight: bold; font-size: 14px; text-transform: uppercase; cursor: pointer; box-sizing: border-box;">
+                Buy Now
+            </button>
+        </div>
+
+        </h3>
+    </div></a>
+    <a href="zfold.html" style="text-decoration: none;">
+    <div class="product-4" style="display: flex; border: 1px solid black; width: auto;height: 200px;margin-top: 5px;margin-left: 10px;margin-right: 10px;">
+        <img style="width: 30vw;border: 1px solid black;height: 200px;" src="https://cdn.mos.cms.futurecdn.net/Xf3WE8Qn7hGfziJpahS38c.jpg">
+        <h3 style="width: 70vw;border: 1px solid black;">
+ <div>
+            <h2 style="font-size: 26px; font-weight: bold; margin-bottom: 5px; color: #000000;margin-left: 20px;">Samsung Galaxy Z-Fold 6</h2>
+            <p style="font-size: 20px; font-weight: bold; margin-bottom: 15px; color: #000000;margin-left: 20px;">$1,899.00</p>
+            
+            <p style="font-size: 14px; margin-bottom: 8px; color: #000000;margin-left: 20px;">colours :</p>
+            <div style="display: flex; gap: 8px; margin-bottom: 10px;margin-left: 20px;">
+                <span style="width: 20px; height: 20px; border-radius: 50%; border: 1px solid #000000; background-color: #2b3a4a; display: inline-block;"></span>
+                <span style="width: 20px; height: 20px; border-radius: 50%; border: 1px solid #000000; background-color: #b8bcbe; display: inline-block;"></span>
+                <span style="width: 20px; height: 20px; border-radius: 50%; border: 1px solid #000000; background-color: #ebd1d5; display: inline-block;"></span>
+            </div>
+        </div>
+
+        <div style="display: flex; gap: 10px; width: 90%; box-sizing: border-box; margin-top: 15px;">
+            <a href="zfold.html" style="flex: 1; padding: 12px 0; background: #ffffff; color: #000000; border: 2px solid #000000; text-align: center; text-decoration: none; font-weight: bold; font-size: 14px; text-transform: uppercase; box-sizing: border-box; display: inline-block;">
+                View Specs
+            </a>
+            <button style="flex: 1; padding: 12px 0; background: #000000; color: #ffffff; border: 2px solid #000000; font-weight: bold; font-size: 14px; text-transform: uppercase; cursor: pointer; box-sizing: border-box;">
+                Buy Now
+            </button>
+        </div>
+
+        </h3>
+    </div></a>
+    <a href="1+15.html" style="text-decoration: none;">
+    <div class="product-7" style="display: flex; border: 1px solid black; width: auto;height: 200px;margin-top: 5px;margin-left: 10px;margin-right: 10px;">
+        <img style="width: 30vw;border: 1px solid black;height: 200px;" src="https://cdn.mos.cms.futurecdn.net/645oevZc8PTHa2f9FndCNE-2000-80.jpg">
+        <h3 style="width: 70vw;border: 1px solid black;">
+ <div>
+            <h2 style="font-size: 26px; font-weight: bold; margin-bottom: 5px; color: #000000;margin-left: 20px;">OnePlus 15</h2>
+            <p style="font-size: 20px; font-weight: bold; margin-bottom: 15px; color: #000000;margin-left: 20px;">$799.00</p>
+            
+            <p style="font-size: 14px; margin-bottom: 8px; color: #000000;margin-left: 20px;">colours :</p>
+            <div style="display: flex; gap: 8px; margin-bottom: 10px;margin-left: 20px;">
+                <span style="width: 20px; height: 20px; border-radius: 50%; border: 1px solid #000000; background-color: #2e4d44; display: inline-block;"></span>
+                <span style="width: 20px; height: 20px; border-radius: 50%; border: 1px solid #000000; background-color: #1a1a1a; display: inline-block;"></span>
+                <span style="width: 20px; height: 20px; border-radius: 50%; border: 1px solid #000000; background-color: #d1d5db; display: inline-block;"></span>
+            </div>
+        </div>
+
+        <div style="display: flex; gap: 10px; width: 90%; box-sizing: border-box; margin-top: 15px;">
+            <a href="1+15.html" style="flex: 1; padding: 12px 0; background: #ffffff; color: #000000; border: 2px solid #000000; text-align: center; text-decoration: none; font-weight: bold; font-size: 14px; text-transform: uppercase; box-sizing: border-box; display: inline-block;">
+                View Specs
+            </a>
+            <button style="flex: 1; padding: 12px 0; background: #000000; color: #ffffff; border: 2px solid #000000; font-weight: bold; font-size: 14px; text-transform: uppercase; cursor: pointer; box-sizing: border-box;">
+                Buy Now
+            </button>
+        </div>
+
+        </h3>
+    </div>
+    </a>
+<script src="node.js"></script>
+<div style="width: 100%; height: 100px;background-color: white;">
+
+</div>
+    
+</body>
+</html>
